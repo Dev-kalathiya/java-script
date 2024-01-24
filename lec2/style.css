@@ -1,0 +1,28 @@
+#img{
+    display: flex;
+align-items: center;
+ margin: auto;
+ width: 600px;
+ padding-top: 25px;
+ margin-top: 25px;
+ border-radius: 20px;
+}
+
+.content{
+   
+   margin: auto;
+   width: 70%;
+    background: rgb(143, 177, 205);
+    border-radius: 10px;
+    margin-top: 100px;
+ 
+
+}
+.text{
+    color: rgb(64, 28, 45);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    font-weight:400;
+}
