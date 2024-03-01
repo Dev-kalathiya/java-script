@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hire The Employee</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <form id="card-body">
+            <h3 id="he">Hire a new Employee</h3>
+            <input type="text" id="name" placeholder="Employee Name"><br>
+            <select name="jr" id="role">
+                <option value="0" selected hidden>Select Job Role</option>
+                <option value="SDE-2">SDE-2</option>
+                <option value="SDE-1">SDE-1</option>
+                <option value="HR Manager">HR Manager</option>
+            </select><br>
+            <select name="sd" id="depart">
+                <option value="0" selected hidden>Select Department</option>
+                <option value="Engineering">Engineering</option>
+                <option value="HR">HR</option>
+            </select><br>
+            <input type="number" name="" id="salary" placeholder="Monthly salary"><br>
+            <input type="number" name="" id="exp" placeholder="prev Work Experience in Years"><br>
+            <input type="email" name="" id="email" placeholder="Contact Email"><br>
+            <input type="submit" id="hire_btn" value="Hire">
+        </form>
+    </div>
+    <div id="main-result">
+        <table id="main-tb">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Job Role</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Contact Email</th>
+                    <th>Work Experince</th>
+                    <th>Role Type</th>
+                    <th>Fire Employee</th>
+                </tr>
+            </thead>
+            <tbody id="tb-main">
+
+
+
+
+
+                
+
+            </tbody>
+            <tr id="summary">
+                <td id="temp"></td>
+                <td id="extra1"></td>
+                <td id="extra1"></td>
+
+                <td id="tsal"></td>
+                <td id="extra1"></td>
+                <td id="extra1"></td>
+                <td id="extra1"></td>
+                <td id="dl_all"><button id="dl_alll">DELETE ALL</button></td>
+
+
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -19,11 +19,27 @@ const handlesubmit = (e) => {
     let td5 = document.createElement("td");
     td5.innerHTML = "Delete";
 
-    td5.addEventListener("click", (e) => {
+    td5.addEventListener("click", (e) => {  
         e.targate.parentNode.remove();
     });
 
-    tr.append(td1, td2, td3, td4, td5);
+    let td6 = document.createElement("td");
+
+    if(grid >= ) {
+        td6.innerHTML = "pass";
+
+        td6.style.backgroundColor = "green";
+    }
+    else{
+        td6.innerHTML = "fail";
+        td6.style.backgroudcolor ="red";
+    }
+    let td7 = document.createElement("td");
+    td7.innerHTML = Work;
+    let td8 = document.createElement("td");
+    td8.innerHTML = "Contact";
+
+    tr.append(td1, td2, td3, td4, td5, td7);
     document.getElementById("tbody").append(tr);
 };
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <style>
+
+        #box div img{
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+            border: 10px solid #0000;
+            color: aqua;
+        }
+
+        #box{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin: 15px;
+            color: #000;
+
+        }
+         #img{
+          border-radius: 20px;
+         }
+
+        .title{
+            color: rgb(127, 140, 255) ;
+        }
+       div{
+        color: black;
+       }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" placeholder="title" id="title" />
+      <input type="url" id="img" placeholder="img" />
+      <input type="number" placeholder="price" id="price" />
+      <input type="submit" />
+    </form>
+
+    <hr>
+
+    <div id="box"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>
