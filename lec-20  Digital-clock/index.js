@@ -15,17 +15,19 @@ function updateTime() {
     }
     
     hours = ( hours< 10) ? "0" + hours : hours;
-    minutes = (minutes < 10) ? "0" + minutes: minutes;
-    seconds= (seconds < 10) ? "" + seconds : seconds;
-    
+   
+  
   
     const date = now.toDateString();
     const year = now.getFullYear();
 
-    
+    let h2=document.createElement("p");
+    h2.innerHTML =date;
 
-    let clockText = `${hours}:${minutes}:${seconds} ${session} | ${date}`;
+    let clockText = `${hours}:${minutes}:${seconds} ${session} `;
     document.getElementById('digital-clock').textContent = clockText;
+
+    document.getElementById('digital-clock').append(h2)
 
 }
 

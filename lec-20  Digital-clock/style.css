@@ -16,19 +16,22 @@
         margin: 350px  auto;
         color: rgb(247, 247, 247);
          /* background: rgb(17, 0, 36);
-    background: linear-gradient(193deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);  */
-    
+    background: linear-gradient(193deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);  
+     */
         border-radius: 100px 100px 100px ;
         font-family :monospace ;
     }
      
     html{  
 
+      /* background-color: black; */
       
-      
-        background: rgb(126,9,228);
+         background: rgb(126,9,228);
     background: radial-gradient(circle, rgb(50, 7, 88) 0%, rgb(221, 183, 183) 35%, rgb(255, 220, 138) 100%);
     background-repeat: no-repeat;
-    height: 925px; 
+    height: 925px;  
     } 
     
+    p{
+        font-size: 60px;
+    }
