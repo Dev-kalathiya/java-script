@@ -1,0 +1,60 @@
+   
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.blog
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px auto;
+}
+.blog .blog-1
+{  
+   padding: 15px;
+   width: 40%;
+}
+#blog_item div
+{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+#blog_item
+{
+   display: grid;
+   grid-template-columns:repeat(5,1fr) ;
+}
+#blog_item img
+{
+   width: 100%;
+}
+#blog_item div button
+{
+   margin: 5px;
+   padding: 5px;
+}
+
+#blog_data{
+   display: flex;
+   width: 250px;
+
+   flex-direction: column;
+   margin: 50px auto;
+}
+
+#blog_data input{
+   margin: 10px;
+   height: 27px;
+   border-radius: 10px;
+}
+
+
+.blog-1{
+   
+   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-contemporary-colorful-fluid-form-and-energetic-liquid-pattern-image_13917393.png);
+}

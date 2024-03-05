@@ -17,9 +17,9 @@ function updateTime() {
     hours = ( hours< 10) ? "0" + hours : hours;
    
   
+   const date = now.toDateString();
   
-    const date = now.toDateString();
-    const year = now.getFullYear();
+     const year = now.getFullYear();
 
     let h2=document.createElement("p");
     h2.innerHTML =date;
@@ -33,7 +33,7 @@ function updateTime() {
 
 
 setInterval(updateTime, 1000);
-updateTime(); 
+updateTime();  
 
 
 
