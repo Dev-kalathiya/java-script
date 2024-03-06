@@ -36,7 +36,7 @@ const Blog_List =()=>
       })
 
       let Div = document.createElement("div");
-      Div.append(Blog_Element_1,Blog_Element_2,Blog_Element_3,Blog_Element_4,Like, Delete_Element);
+      Div.append(Blog_Element_1,Blog_Element_2,Blog_Element_3, Blog_Element_4,Like, Delete_Element);
       document.getElementById("blog_item").append(Div);
    }
 }

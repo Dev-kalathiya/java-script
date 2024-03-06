@@ -12,11 +12,15 @@
    align-items: center;
    justify-content: center;
    margin: 50px auto;
+   background-image: url(https://img.freepik.com/premium-vector/abstract-trendy-floral-background-vector_7087-1882.jpg);
+ 
 }
+
 .blog .blog-1
 {  
    padding: 15px;
    width: 40%;
+   
 }
 #blog_item div
 {
@@ -49,12 +53,13 @@
 
 #blog_data input{
    margin: 10px;
-   height: 27px;
+   height: 30px;
    border-radius: 10px;
+
 }
 
-
-.blog-1{
-   
-   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-contemporary-colorful-fluid-form-and-energetic-liquid-pattern-image_13917393.png);
+#blog_data input:hover{
+   background-color: rgb(196, 230, 230);
+   color: rgb(56, 62, 165);
+   font-size: 12px;
 }
