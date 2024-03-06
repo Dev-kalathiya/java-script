@@ -1,23 +1,23 @@
-let Blog_Of_Array=[]
+let contant_Of_Array=[]
 
 const Blog_List =()=>
 {
    document.getElementById("blog_item").innerHTML=""
 
-   for(let i=0;i<Blog_Of_Array.length;i++)
+   for(let i=0;i<contant_Of_Array.length;i++)
    {
      
       let Blog_Element_1 = document.createElement("h2");
-      Blog_Element_1.innerHTML=Blog_Of_Array[i].Blog_Title;
+      Blog_Element_1.innerHTML=contant_Of_Array[i].Blog_Title;
 
       let Blog_Element_2 = document.createElement("img");
-      Blog_Element_2.src = Blog_Of_Array[i].Blog_Img;
+      Blog_Element_2.src = contant_Of_Array[i].Blog_Img;
 
       let Blog_Element_3 = document.createElement("p");
-      Blog_Element_3.innerHTML=Blog_Of_Array[i].Blog_Content;
+      Blog_Element_3.innerHTML=contant_Of_Array[i].Blog_Content;
 
       let Blog_Element_4 = document.createElement("h4");
-      Blog_Element_4.innerHTML=Blog_Of_Array[i].Blog_Category;
+      Blog_Element_4.innerHTML=contant_Of_Array[i].Blog_Category;
 
       let Like = document.createElement("button");
       Like.innerHTML="Like";
@@ -31,7 +31,7 @@ const Blog_List =()=>
 
       Delete_Element.addEventListener("click",()=>
       {
-         Blog_Of_Array.splice(i,1);
+         contant_Of_Array.splice(i,1);
          Blog_List();
       })
 
@@ -56,7 +56,7 @@ const blog = (e) =>
          Blog_Content : Blog_Content,
          Blog_Category: Blog_Category,
       };
-      Blog_Of_Array.push(Blog_Object);
+      contant_Of_Array.push(Blog_Object);
      Blog_List() 
 }
 
