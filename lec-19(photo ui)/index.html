@@ -7,7 +7,9 @@
 
 
     <style>
-
+        .main{
+        background-color: rgb(56, 50, 173);
+       }
         #box div img{
             height: 300px;
             width: 300px;
@@ -33,19 +35,20 @@
        div{
         color: black;
        }
+       
     </style>
   </head>
   <body>
+    <div class="main">
     <form id="form">
       <input type="text" placeholder="title" id="title" />
       <input type="url" id="img" placeholder="img" />
       <input type="number" placeholder="price" id="price" />
       <input type="submit" />
     </form>
-
     <hr>
-
     <div id="box"></div>
+  </div>
   </body>
   <script src="./index.js"></script>
 </html>
