@@ -10,7 +10,7 @@ const show = () =>{
         clearInterval(fisrt)
         show1();
       } 
- },1) 
+ },1 ) 
 }
 const show1 = () =>{
     let count5 = document.querySelector('#count2').innerHTML;
@@ -34,6 +34,6 @@ const show1 = () =>{
            clearInterval(third)
     
          } 
-    },1) 
+    },1 ) 
    }
    setTimeout(show)
