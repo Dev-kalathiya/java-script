@@ -1,0 +1,41 @@
+#btn:focus .fa-heart {
+    color: red;
+
+}
+
+#btn>h1 {
+    display: block;
+}
+
+#btn,
+#btn2,
+#btn3,
+#btn4 {
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+    background-color: transparent;
+
+
+}
+
+body{
+    padding-top: 300px;
+}
+.row {
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgb(21, 54, 219) 0%, rgb(188, 140, 181) 100%);
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+  padding-top: px;
+    margin: 0px 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+  
+    width: 200px;
+    margin: 50px;
+
+}
