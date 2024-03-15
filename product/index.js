@@ -25,7 +25,7 @@ const Blog_List =()=>
       document.getElementById("blog_item").append(Div);
    }
 }
-
+ Blog_List();
 const blog = (e) =>
 {
     e.preventDefault();
