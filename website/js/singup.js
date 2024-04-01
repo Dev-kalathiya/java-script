@@ -1,1 +1,0 @@
-let signup = JSON.parse(localStorage.getItem('signup')); 
