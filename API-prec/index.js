@@ -24,9 +24,7 @@ data.map((ele)=>{
 
 
 
-// fetch("https://dummyjson.com/products")
-// .then((res)=>res.json())
-// .then((data)=>uimaker(data.products));
+
 fetch('https://dummyjson.com/products')
 .then(res => res.json())
 .then((data) => uimaker(data.products))

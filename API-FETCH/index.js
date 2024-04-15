@@ -1,7 +1,7 @@
 const uimaker=(data)=>{
 
     data.map((ele)=>{
-        let title=document.createElement("p")
+     let title=document.createElement("p") 
         title.innerHTML=ele.title
         title.setAttribute("id", "title")
 

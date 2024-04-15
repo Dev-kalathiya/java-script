@@ -12,9 +12,6 @@ const handleCart = (ele) => {
 
 
 
-
-
-
 const objectMapper = (data) => {
     document.getElementById("box").innerHTML = ""
     data.map((ele) => {
@@ -36,11 +33,6 @@ const objectMapper = (data) => {
 
         document.getElementById("box").append(div)
 
-
-
-
-
-        // events
         buy.addEventListener("click", () => handleCart(ele))
 
     })

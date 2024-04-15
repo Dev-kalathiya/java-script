@@ -16,7 +16,7 @@ const handleUser = (e) => {
     }
     else {
 
-        window.location.href = "/Website/pages/Signup.html"
+        window.location.href = "/pages/Signup.html"
 
     }
 

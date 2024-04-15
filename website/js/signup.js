@@ -19,7 +19,7 @@ const signup = (e) => {
     localStorage.setItem("signup", JSON.stringify(user))
 
 
-    window.location.href = "/Webside/index.html"
+    window.location.href = "/index.html"
 
 
 

@@ -14,7 +14,7 @@ const handleProduct = (e) => {
     }
     product.push(data)
     localStorage.setItem("products", JSON.stringify(product))
-    window.location.href = "/Website/index.html"
+    window.location.href = "/index.html"
 
 }
 
