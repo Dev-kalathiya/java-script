@@ -8,7 +8,7 @@ console.log(getWeather);
 const handleData = (e) => {
 
     e.preventDefault()
-
+ 
     let cityName = document.getElementById("search").value
     getWeather(cityName)
 }
@@ -21,3 +21,4 @@ const handleData = (e) => {
 
 
 document.getElementById("form").addEventListener("submit" , handleData)
+
