@@ -1,0 +1,28 @@
+.footer {
+    background-color: #E11B23; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff; /* Light text color for headings */
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* Light text color for links */
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
