@@ -65,7 +65,7 @@
       "url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1711018975_8481282.jpg?format=webp&w=300&dpr=1.0",
       "category": "man"
     },
-    {
+       {
       "id": "e97c",
       "title": "man",
       "price": "1350",
@@ -80,22 +80,5 @@
       "category": "man"
     }
   ],
-  "cart": [
-    {
-      "id": "f229",
-      "title": "t-shirt",
-      "price": "999",
-      "url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714207343_1617091.jpg?format=webp&w=480&dpr=1.0",
-      "category": "man",
-      "quy": 2
-    },
-    {
-      "id": "a0cf",
-      "title": "girl",
-      "price": "1700",
-      "url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714716706_5314418.png?format=webp&w=480&dpr=1.0",
-      "category": "woman",
-      "quy": 2
-    }
-  ]
+  "cart": []
 }

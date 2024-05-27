@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="quiz-form">
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" cols="50"></textarea>
+            <label for="option_a">Option A:</label>
+            <input id="option_a" name="option_a" type="text">
+            <label for="option_b">Option B:</label>
+            <input id="option_b" name="option_b" type="text">
+            <label for="option_c">Option C:</label>
+            <input id="option_c" name="option_c" type="text">
+            <label for="option_d">Option D:</label>
+            <input id="option_d" name="option_d" type="text">
+            <label for="answer">Answer:</label>
+            <input id="answer" name="answer" type="text">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("quiz-form").addEventListener("submit", function (event) 
+        {
+            event.preventDefault();
+            const formData = new FormData(this);
+            fetch('http://localhost:3000/questions', {
+                method: "POST",
+                body: JSON.stringify({
+                    questions: [
+                        ...JSON.parse(localStorage.getItem("questions") || "[]"),
+                        {
+                            question: formData.get("question"),
+                            options: {
+                                A: formData.get("option_a"),
+                                B: formData.get("option_b"),
+                                C: formData.get("option_c"),
+                                D: formData.get("option_d")
+                            },
+                            correct: formData.get("answer")
+                        }
+                    ]
+                }),
+
+            })
+                .then(response => response.json())
+                .then(data => {
+                    localStorage.setItem("questions", JSON.stringify(data.questions));
+                    console.log(data);
+                })
+                .catch(error => console.error("Error:", error));
+        });
+    </script>
+</body>
+
+</html>
