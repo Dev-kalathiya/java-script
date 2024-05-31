@@ -102,12 +102,6 @@ const adddata= (res)=>{
 
 
 
-
-
-
-
-
-
 const data = () => {
     fetch('http://localhost:3000/cart')
         .then(res => res.json())

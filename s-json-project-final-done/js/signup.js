@@ -34,7 +34,7 @@ const form = (e) => {
     let email = document.getElementById('mail').value;
     let password = document.getElementById('password').value;
 
-    // Check if email and password match the regex patterns
+
     if (!emailRegex.test(email)) {
         alert("Please enter a valid email address.");
         return;
