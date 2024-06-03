@@ -1,7 +1,7 @@
 const HandleQty=(data)=>{
 
     try {
-        fetch(`http://localhost:3000/cart/${data.id}`, {
+        fetch(`https://group-work-1.onrender.com/cart/${data.id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)

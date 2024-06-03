@@ -13,7 +13,7 @@ const handleData = (e) => {
         img: document.getElementById("url").value,
         category: document.getElementById("Category").value
     }
-    Post("http://localhost:3000/products", data)
+    Post("https://group-work-1.onrender.com/products", data)
 }
 
 

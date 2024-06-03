@@ -9,7 +9,7 @@ document.getElementById("footer").innerHTML= foot()
 
 // const buy = (e)=>{
 
-//     postdata(e,"http://localhost:3000/cart")
+//     postdata(e,"https://group-work-1.onrender.com/cart")
 
 
 // }
@@ -51,7 +51,7 @@ const renderProducts = (products) => {
     const productsContainer = document.getElementById("products");
     productsContainer.innerHTML = ""; // Clear previous products
 
-    products.forEach(product => {
+    products.forEach((product,index) => {
         const { title, url, price, category } = product;
 
         const productDiv = document.createElement("div");
@@ -75,16 +75,38 @@ const renderProducts = (products) => {
         buyButton.addEventListener("click", () => {
             // Handle buy button action here
             console.log("Buy clicked for:", title);
+            alert(`Your order is in cart`)
+            isCarted(product)
+            
         });
-
+        
         productDiv.append(img, titleElement, priceElement, categoryElement, buyButton);
         productsContainer.appendChild(productDiv);
     });
 };
 
+const isCarted=async (data)=>{
+    console.log(data);
+    try {
+        let res= await fetch(`https://group-work-1.onrender.com/cart/${data.id}`);
+        let data =await res.json()
+    } catch (error) {
+        console.log('Hi');
+        fetch(`https://group-work-1.onrender.com/cart`,{
+            method:"POST",
+            headers:{"Content-Type": "Application/json"},
+            body:JSON.stringify({...data,quy:1})
+        })
+        .then((res)=>res.json())
+        .then((data)=>{
+            console.log(data);
+        })
+    }
+    
+}
 // Function to fetch products data and initialize sorting/filtering
 const initializeProducts = () => {
-    fetch('http://localhost:3000/products')
+    fetch('https://group-work-1.onrender.com/products')
         .then(response => response.json())
         .then(data => {
             let filteredProducts = [...data]; // Initialize with all products
@@ -133,7 +155,7 @@ initializeProducts();
 
 
 const data = () => {
-    fetch('http://localhost:3000/products')
+    fetch('https://group-work-1.onrender.com/products')
         .then(res => res.json())
         .then(data => initializeProducts(data))
 

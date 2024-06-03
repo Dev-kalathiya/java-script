@@ -11,7 +11,7 @@ const updateQuantity = (id, newQuantity) => {
         deleteItem(id); // Remove the item if the new quantity is less than 1
         return;
     }
-    fetch(`http://localhost:3000/cart/${id}`, {
+    fetch(`https://group-work-1.onrender.com/cart/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const updateQuantity = (id, newQuantity) => {
 
 
 const deleteItem = (id) => {
-    fetch(`http://localhost:3000/cart/${id}`, {
+    fetch(`https://group-work-1.onrender.com/cart/${id}`, {
         method: 'DELETE'
     })
     .then(response => {
@@ -103,7 +103,7 @@ const adddata= (res)=>{
 
 
 const data = () => {
-    fetch('http://localhost:3000/cart')
+    fetch('https://group-work-1.onrender.com/cart')
         .then(res => res.json())
         .then(data => adddata(data))
 

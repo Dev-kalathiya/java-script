@@ -3,7 +3,7 @@ document.getElementById("navbar").innerHTML = NavBar()
 const isExists = (user) => {
 
     try {
-        fetch(`http://localhost:3000/users?email=${user.email}`)
+        fetch(`https://group-work-1.onrender.com/users?email=${user.email}`)
             .then((res) => res.json())
             .then((data) => {
 
@@ -23,7 +23,7 @@ const isExists = (user) => {
 }
 const isValid = (user) => {
 
-    fetch(`http://localhost:3000/users?email=${user.email}&password=${user.password}`)
+    fetch(`https://group-work-1.onrender.com/users?email=${user.email}&password=${user.password}`)
         .then((res) => res.json())
         .then((data) => {
             if (data.length == 1) {

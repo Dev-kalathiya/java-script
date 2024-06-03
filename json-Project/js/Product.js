@@ -4,7 +4,7 @@ import NavBar from "../components/navBar.js";
 document.getElementById("navbar").innerHTML=NavBar()
 
 const get=async()=>{
-    let data=await GetData("http://localhost:3000/products")
+    let data=await GetData("https://group-work-1.onrender.com/products")
     uiMaker(data,"container")
 } 
 get()

@@ -3,7 +3,7 @@ import Post from "../Api/post.js"
 import CreateTag from "./CreateTag.js"
 
 const isExists = (data) => {
-    fetch(`http://localhost:3000/cart/${data.id}`)
+    fetch(`https://group-work-1.onrender.com/cart/${data.id}`)
         .then((res) => res.json())
         .then((res) => {
             res.qty += 1
@@ -11,7 +11,7 @@ const isExists = (data) => {
 
         })
         .catch((err) => {
-            Post("http://localhost:3000/cart", data)
+            Post("https://group-work-1.onrender.com/cart", data)
         })
 
 
@@ -35,7 +35,7 @@ const uiMaker = (data, id) => {
         let btn = CreateTag("button")
         btn.innerHTML = "Buy Now"
         btn.addEventListener("click", () => {
-            //   Post("http://localhost:3000/cart",{...ele,qty:1})
+            //   Post("https://group-work-1.onrender.com/cart",{...ele,qty:1})
 
             ele.qty = 1
             isExists(ele)

@@ -16,7 +16,7 @@ const addproduct =(e)=>{
         category : document.getElementById("category").value
                
     }
-   postdata(product,"http://localhost:3000/products")
+   postdata(product,"https://group-work-1.onrender.com/products")
 }
 
 

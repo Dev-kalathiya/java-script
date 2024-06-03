@@ -24,25 +24,12 @@ li {
     /* Added position relative for overlapping */
 }
 
-.primary-header:before {
-    content: '';
-    background-image: url('https://www.thesouledstore.com/static/img/newlogo.8dcc6cc.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+
+.HElio{
     position: absolute;
-    width: 7%;
-    /* Adjust width as needed */
-    height: 300px;
-    /* Adjust height as needed */
-    top: 85%;
-    /* Move the background to the center vertically */
-    left: 10%;
-    /* Move the background to the center horizontally */
-    transform: translate(-50%, -50%);
-    /* Center the background */
-    z-index: 1;
-    /* Ensure the background stays behind content */
+    top: -0px;
+    left: 0;
+    z-index: 1000;
 }
 
 /* Logo Container */
@@ -56,10 +43,12 @@ li {
     position: absolute;
     margin-top: 15px;
     z-index: 999;
-    right: 83%;
+    top: 10px;
+    left: 15px;
     /* Adjust the distance from the logo */
     transform: translateY(-50%);
     animation: blink 1s infinite;
+    z-index: 1001;
 }
 
 @keyframes blink {
@@ -152,19 +141,7 @@ nav ul li a:hover {
         padding: 5px;
     }
 
-    .primary-header:before {
-        width: 8%;
-        height: 200%;
-        top: 80%;
-        left: 5%;
-    }
-
-    .blinking-eye {
-        top: -5px;
-        width: 20px;
-        right: 89%;
-        /* Adjust the distance from the logo for smaller screens */
-    }
+   
 }
 
 @media only screen and (max-width: 768px) {
@@ -173,27 +150,13 @@ nav ul li a:hover {
         align-items: center;
     }
 
-    .primary-header:before {
-        left: 50%;
-        top: 20px;
-        width: 80px;
-        /* Adjust width for smaller screens */
-        height: 150px;
-        /* Adjust height for smaller screens */
-    }
-
+  
     .primary-header .logo-container {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
     }
 
-    .blinking-eye {
-        top: -10px;
-        width: 15px;
-        right: 52%;
-        /* Adjust the distance from the logo for smaller screens */
-    }
 
     nav ul {
         margin-top: 15px;
@@ -218,11 +181,7 @@ nav ul li a:hover {
         padding: 5px;
     }
 
-    .blinking-eye {
-        top: -10px;
-        width: 15px;
-        right: 52%;
-    }
+  
 
     nav ul {
         margin-top: 15px;

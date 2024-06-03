@@ -5,7 +5,7 @@ document.getElementById("footer").innerHTML= foot()
 
 const isvalid =(email,password) => {
 
-    fetch(`http://localhost:3000/users?email=${email}&password=${password}`)
+    fetch(`https://group-work-1.onrender.com/users?email=${email}&password=${password}`)
 
        .then(res => res.json())
     .then(data => {
