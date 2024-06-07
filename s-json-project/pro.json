@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "698c",
+      "Name": "js-class",
+      "Number": "5654546464",
+      "email": "d@gamil.com",
+      "password": "111"
+    },
+    {
+      "id": "770c",
+      "Name": "dev kalathya",
+      "Number": "985523647",
+      "email": "dev461@gamil.com",
+      "password": "ook2"
+    },
+    {
+      "id": "c959",
+      "Name": "ook",
+      "Number": "59632396",
+      "email": "fullstack@gmail.com",
+      "password": "ook2"
+    },
+    {
+      "id": "dda0",
+      "Name": "dev kalathya",
+      "Number": "4559659",
+      "email": "dev4789@gamil.com",
+      "password": "ffwecwe"
+    }
+  ],
+  "products": [
+    {
+      "id": "f229",
+      "title": "t-shirt",
+      "price": "999",
+      "url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714207343_1617091.jpg?format=webp&w=480&dpr=1.0",
+      "category": "man"
+    },
+    {
+      "id": "63b7",
+      "title": "t-shirt",
+      "price": "1200",
+      "url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714207343_1617091.jpg?format=webp&w=480&dpr=1.0",
+      "category": "man"
+    }
+  ],
+  "cart": []
+}
