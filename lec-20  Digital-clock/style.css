@@ -20,6 +20,8 @@
     border-radius: 50px; 
     font-family: monospace;
     text-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+
+    
 }
 
 html {
@@ -80,5 +82,7 @@ html {
         border-radius: 30px;
     }
 }
+
+
 
 
