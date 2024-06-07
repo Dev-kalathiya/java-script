@@ -1,0 +1,198 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Primary Header */
+.primary-header {
+    background-color: #E11B23;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Added box shadow for depth */
+    position: relative;
+    /* Added position relative for overlapping */
+}
+
+
+.HElio{
+    position: absolute;
+    top: -0px;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo Container */
+.logo-container {
+    position: relative;
+    width: 50%;
+}
+
+/* Blinking Eye */
+.blinking-eye {
+    position: absolute;
+    margin-top: 15px;
+    z-index: 999;
+    top: 10px;
+    left: 15px;
+    /* Adjust the distance from the logo */
+    transform: translateY(-50%);
+    animation: blink 1s infinite;
+    z-index: 1001;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+
+    padding: 15px;
+    list-style-type: none;
+
+
+}
+
+nav ul li {
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    /* Increased font size */
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Search Input */
+.search input {
+    padding: 8px;
+    /* Increased padding */
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    /* Added margin to separate search input from navigation */
+    font-size: 18px;
+    /* Increased font size */
+}
+
+/* Secondary Header */
+.secondary-header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    /* Added position relative for overlapping */
+}
+
+.scrolling-text {
+    padding: 5px;
+    animation: scrollText 15s linear infinite;
+}
+
+.sale {
+    color: red;
+    font-weight: bolder;
+    font-size: 22PX;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.flat {
+    font-weight: 600;
+    color: rgb(69, 151, 111);
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Make the layout responsive */
+@media only screen and (max-width: 1025px) {
+    .primary-header {
+        padding: 5px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .primary-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+    .primary-header .logo-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    nav ul {
+        margin-top: 15px;
+        /* Added margin to separate navigation from logo in smaller screens */
+    }
+
+    .scrolling-text {
+        padding: 5px;
+        animation: scrollText 7s linear infinite;
+    }
+
+    .search input {
+        margin-top: 10px;
+        /* Added margin to separate search input from navigation in smaller screens */
+        margin-left: 0;
+        /* Reset margin-left for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .primary-header {
+        padding: 5px;
+    }
+
+  
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .search input {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .scrolling-text {
+        animation: scrollText 7s linear infinite;
+    }
+}

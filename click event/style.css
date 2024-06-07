@@ -20,11 +20,12 @@
 }
 
 body{
+    background-color: rgb(237, 229, 220);
     padding-top: 300px;
 }
 .row {
     background: rgb(63,94,251);
-background: radial-gradient(circle, rgb(21, 54, 219) 0%, rgb(188, 140, 181) 100%);
+    background: radial-gradient(circle, rgb(21, 153, 219) 10%, rgb(184, 188, 140) 70%);
     border: 2px solid cadetblue;
     border-radius: 10px;
   padding-top: px;

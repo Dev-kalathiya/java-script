@@ -1,0 +1,37 @@
+{
+  "users": [],
+  "products": [
+    {
+      "id": "7bf8",
+      "title": "oversize",
+      "price": "999",
+      "img": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713680867_5034494.jpg?format=webp&w=480&dpr=1.0",
+      "category": "men"
+    },
+    {
+      "id": "e4dc",
+      "title": "oversize",
+      "price": "999",
+      "img": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713680867_5034494.jpg?format=webp&w=480&dpr=1.0",
+      "category": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": "e4dc",
+      "title": "oversize",
+      "price": "999",
+      "img": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713680867_5034494.jpg?format=webp&w=480&dpr=1.0",
+      "category": "",
+      "qty": 7
+    },
+    {
+      "id": "7bf8",
+      "title": "oversize",
+      "price": "999",
+      "img": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713680867_5034494.jpg?format=webp&w=480&dpr=1.0",
+      "category": "men",
+      "qty": 4
+    }
+  ]
+}
