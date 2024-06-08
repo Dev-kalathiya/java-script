@@ -16,7 +16,7 @@
         height: 50px;
         background-color: rgb(255, 255, 255);
     }
-    /* Table Styling */
+   
 .container-fluid1 table {
     width: 100%;
     border-collapse: collapse;
@@ -56,7 +56,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Styling */
+
 .container-fluid1 button {
     padding: 8px 16px;
     border: none;
@@ -75,32 +75,56 @@
     transform: translateY(1px);
 }
 
-/* Quantity Styling */
+
 .container-fluid1 span {
     font-weight: bold;
     margin: 0 8px;
 }
 
-/* Total Styling */
+
 .container-fluid1 .total {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
-/* Empty Cart Message Styling */
+
 .container-fluid1 .empty-cart-msg {
     text-align: center;
     font-size: 18px;
     color: #555;
 }
-.footer{
+/* .footer{
     position:sticky;
-}
-.p{
-    padding-top: 10%;
     
 }
+.p{
+    padding-top: 16%;
+    
+} */
+body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        } */
+
+             .container-fluid1 {
+            flex: 1;
+        } 
+
+        .footer {
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+          
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .p {
+            flex-grow: 1;
+        }
 
 
 
@@ -132,7 +156,7 @@
 
     </div>
     <!-- footer -->
-    <div id="footer">
+    <div id="footer" class="footer">
 
     </div>
 

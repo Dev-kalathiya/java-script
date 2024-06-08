@@ -6,7 +6,8 @@ document.getElementById("footer").innerHTML= foot();
 
 
 
-const updateQuantity = (id, newQuantity) => {
+const updateQuantity = async(id, newQuantity) => {
+
     if (newQuantity < 1) {
         deleteItem(id); // Remove the item if the new quantity is less than 1
         return;
@@ -30,12 +31,16 @@ const updateQuantity = (id, newQuantity) => {
     .catch(error => {
         console.error('There was an error!', error);
     });
+    setTimeout(() => {
+        data()
+    },300)
+     
+
+   
 }
 
 
-
-
-const deleteItem = (id) => {
+const deleteItem =(id) => {
     fetch(`https://group-work-1.onrender.com/cart/${id}`, {
         method: 'DELETE'
     })
@@ -51,11 +56,17 @@ const deleteItem = (id) => {
     .catch(error => {
         console.error('There was an error!', error);
     });
+
+    setTimeout(() => {
+        data()
+    },1000)
+     
 }
 
 
 const adddata= (res)=>{
-  console.log(res);
+//   console.log(res);
+document.getElementById("productList").innerHTML=""
     res.map ((ele)=>{
       
         let td1 = document.createElement("td");
