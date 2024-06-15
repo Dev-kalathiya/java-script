@@ -1,0 +1,256 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background {
+   
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: auto; /* Enable vertical scrolling */
+    position: relative;
+}
+
+.container {
+ 
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Ensure content is above the background image */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity for readability */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: #2344c8;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Form Styles */
+.form-section {
+    grid-column: 1 / 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form-section:hover {
+    transform: translateY(-5px);
+}
+
+.form-section h2 {
+    font-size: 1.5em;
+    color: #2344c8;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2344c8;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green color for button */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Summary Styles */
+.summary-section {
+    grid-column: 2 / 3;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease;
+}
+
+.summary-section:hover {
+    transform: translateY(-5px);
+}
+
+.summary-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #2344c8; /* Blue text color */
+}
+
+.summary-section .summary-item {
+    margin-bottom: 15px;
+}
+
+.summary-section .summary-item span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.summary-section .summary-item .label {
+    color: #666; /* Lighter text color for labels */
+    font-size: 16px;
+}
+
+/* Chart Styles */
+.chart-section {
+    grid-column: span 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set a fixed height for the chart section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease;
+}
+
+.chart-section:hover {
+    transform: translateY(-5px);
+}
+
+.chart-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #2344c8; /* Blue text color */
+}
+
+/* Transactions Styles */
+.transactions-section {
+    grid-column: span 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 400px; /* Set maximum height for the transactions section */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.transactions-section h2 {
+    font-size: 24px;
+    color: #2344c8; /* Blue text color */
+    margin-top: 0;
+}
+
+.transactions-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transactions-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.transactions-section li:hover {
+    background-color: #f8f9fa;
+}
+
+.transactions-section li.income {
+    color: green;
+}
+
+.transactions-section li.expense {
+    color: red;
+}
+
+.transactions-section .delete-btn {
+    background-color: #dc3545; /* Red color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.transactions-section .delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background-color: rgb(249, 60, 60);
+    margin-block-end: 1%;
+    width: fit-content;
+}
+
+.income {
+    font-size: 18px;
+}
+
+.expense {
+    font-size: 18px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
