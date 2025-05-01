@@ -149,8 +149,7 @@
 let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 let chart;
 const { jsPDF } = window.jspdf;
-const wb = XLSX.utils.book_new();
-const ws = XLSX.utils.json_to_sheet(data);
+
 
 // DOM Elements
 const transactionForm = document.getElementById('transaction-form');
